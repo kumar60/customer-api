@@ -1,0 +1,21 @@
+version: '2'
+services:
+  customer:
+    image: "customer:latest"
+    ports:
+     - "2017:8080"
+    networks:
+      - customer
+    links:
+      - order
+    environment:
+     - ORDER_HOST_NAME=localhost
+  order:
+    image: "order:latest"
+    ports:
+      - "8080:8080"
+    networks:
+      - customer
+networks:
+  customer:
+    driver: bridge

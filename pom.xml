@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.springframework</groupId>
-    <artifactId>javahome-spring-boot-docker</artifactId>
+    <artifactId>customer-api</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
     <name>Spring Boot Docker</name>
@@ -34,7 +34,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.11</version>
                 <configuration>
-                    <imageName>${docker.image.prefix}/${project.artifactId}:${project.version}</imageName>
+                    <imageName>customer</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <serverId>docker-hub</serverId>
                     <resources>
