@@ -34,7 +34,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.4.11</version>
 				<configuration>
-					<imageName>customer</imageName>
+					<imageName>sureshkanna/customer:0.1.0</imageName>
 					<dockerDirectory>src/main/docker</dockerDirectory>
 					<serverId>docker-hub</serverId>
 					<resources>
